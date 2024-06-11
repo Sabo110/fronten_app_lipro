@@ -59,6 +59,7 @@ function SignIn() {
                 </div>
 
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                    {mutation.isError && <p className="text-white p-2 bg-danger-500 mb-4 text-center">Les informations sont invalides !</p> }
                     <form className="space-y-6" action="#" method="POST" onSubmit={handleSubmit(onSubmit)}>
                         <div>
                             <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
