@@ -1,6 +1,6 @@
 import axios from "axios"
 
-axios.defaults.baseURL = 'http://127.0.0.1:8000';
+axios.defaults.baseURL = 'http://soquestionnaire.pythonanywhere.com';
 
 const generateQuestionnaire = async (pdf_file) => {
     const response = await axios.post('/questionnaire/generation/', {pdf_file: pdf_file}, {
