@@ -1,6 +1,6 @@
 import axios from "axios"
 
-axios.defaults.baseURL = 'http://soquestionnaire.pythonanywhere.com';
+axios.defaults.baseURL = 'https://soquestionnaire.pythonanywhere.com';
 
 const signUpAccount = async (data) => {
         const response = await axios.post('/utilisateur/', data)
